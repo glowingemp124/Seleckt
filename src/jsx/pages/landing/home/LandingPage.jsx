@@ -87,7 +87,7 @@ function LandingPage() {
       <div id="mockUpsSectionEmployer"><MockUpsSection /></div>
 
       <div id="industries">
-      {isMobile ? <IndustryDetailsMockupsMobile /> : <IndustryDetailsMockups />}
+        {isMobile ? <IndustryDetailsMockupsMobile /> : <IndustryDetailsMockups />}
       </div>
 
       <div id="worker"><AreYouWorker /></div>

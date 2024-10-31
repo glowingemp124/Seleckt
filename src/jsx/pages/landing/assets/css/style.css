@@ -753,7 +753,8 @@ label {
 
 .arrow-rotate {
   transition: transform 0.3s ease-in-out;
-  transform: rotate(90deg); /* Adjust the angle as needed */
+  transform: rotate(90deg);
+  /* Adjust the angle as needed */
 }
 
 .arrow {
@@ -763,6 +764,10 @@ label {
 .faq_sections_heading {
   font-size: 1.75rem;
   font-weight: 600;
+}
+
+.faq_list_text {
+  font-size: 1.05rem;
 }
 
 @media only screen and (max-width: 1440px) {

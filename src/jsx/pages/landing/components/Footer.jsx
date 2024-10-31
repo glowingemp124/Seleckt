@@ -29,6 +29,11 @@ const Footer = () => {
           </div>
 
           <div>
+
+            <h5 className="mt-1 font text-center footer_desc text-white fw-bold text-black" style={{ fontSize: '1.25rem' }}>
+              SELECKT STAFF
+            </h5>
+
             <h5 className="font text-center footer_desc text-white fw-medium text-black">
               Staffing Made Simple
             </h5>

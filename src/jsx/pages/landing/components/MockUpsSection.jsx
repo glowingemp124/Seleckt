@@ -10,7 +10,7 @@ import { te } from "date-fns/locale";
 import mockup2 from "../assets/img/firstMockupImages/Mockup2.webp";
 import employer_profile from "../assets/img/firstMockupImages/employer_profile.webp";
 import companyProfilePage from "../assets/img/firstMockupImages/companyProfilePage.webp";
-import companyTimesheet from "../assets/img/firstMockupImages/companyEmpTimesheet.webp";
+import companyTimesheet from "../assets/img/firstMockupImages/employer_timesheet.webp";
 
 const MockUpsSection = () => {
   const [smallScreen, setSmallScreen] = useState(false);

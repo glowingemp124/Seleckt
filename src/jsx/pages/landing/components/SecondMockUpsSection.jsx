@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { te } from "date-fns/locale";
 import workerProfile from "../assets/img/secondMockupImages/workerProfileNew.png";
-import worker_profile_page from "../assets/img/secondMockupImages/worker_profile_page.webp";
+import worker_profile_page from "../assets/img/secondMockupImages/worker_profile.webp";
 import timeSheet from "../assets/img/secondMockupImages/timeSheet.png";
 import workerDashboard from "../assets/img/secondMockupImages/workerDashboard.webp";
 

@@ -21,8 +21,7 @@ const FaqDataWorker = [
         id: 2,
         question: "What Types of Roles Can I Find on Seleckt Staff?",
         answer: [
-          "Seleckt Staff offers a broad range of short-term, long-term, and temp-to-perm roles across various industries, including Industrial, Facilities Management, Hospitality, Business Support, Retail, and Nursery Care.",
-          "Opportunities include positions like warehouse operatives, picker packers, drivers, drivers' mate, cleaners, hygiene operatives, chefs, retail assistants, waiting staff, and sales support personnel—with many more to explore. Whatever your skills or interests, there's a role for you!",
+          "Seleckt Staff offers a broad range of short-term, long-term, and temp-to-perm roles across various industries, including Industrial, Facilities Management, Hospitality, Business Support, Retail, and Nursery Care. Opportunities include positions like warehouse operatives, picker packers, drivers, drivers' mate, cleaners, hygiene operatives, chefs, retail assistants, waiting staff, and sales support personnel with many more to explore. Whatever your skills or interests, there's a role for you!",
         ],
       },
       {
@@ -40,7 +39,7 @@ const FaqDataWorker = [
       {
         id: 4,
         question: "Can I Take On Multiple Roles Simultaneously?",
-        answer: [
+        list: [
           "Multiple Roles: You can work in different roles as long as you've been onboarded and have the required skills and experience. For example, within Industrial, you can take on multiple roles such as forklift truck driver, picker packer, or load crew staff.",
           "Cross-industry flexibility: In addition to industrial roles, you can work in other industries, such as being a bartender, door supervisor, or hostess.",
         ],
@@ -65,7 +64,7 @@ const FaqDataWorker = [
         list: [
           "Download the app",
           "Set up your profile",
-          "Add your preferences - including industries, job roles and skills",
+          "Add your preferences including industries, job roles and skills",
           "Schedule an onboarding interview to verify your profile",
           "Start receiving offers from potential employers",
           "Accept an offer and secure your first shift",
@@ -212,7 +211,7 @@ const FaqDataWorker = [
       {
         id: 8,
         question: "What If I Can't Make It to a Scheduled Shift?",
-        answer: [
+        list: [
           "Cancel Anytime: You can cancel shifts at any time.",
           "24-Hour Rule: If you cancel a shift within 24 hours of its start time, you must provide a valid reason for your cancellation.",
           "Consequences for Late Cancellation: Cancelling within 24 hours without a valid reason can result in a strike against your account, which may impact your ability to pick up future jobs on the platform.",

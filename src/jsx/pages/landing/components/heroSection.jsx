@@ -45,6 +45,20 @@ export const HeroSection = (props) => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
+            <h5
+              className="mx-0 font text-center footer_desc text-white fw-bold"
+              style={{ fontSize: "1.25rem", width: "15rem" }}
+            >
+              SELECKT STAFF
+            </h5>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             <p
               className="mx-0 font text-center footer_desc text-white fw-medium"
               style={{ fontSize: "0.85rem", width: "15rem" }}

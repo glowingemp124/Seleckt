@@ -5,9 +5,10 @@ import FaqDataEmployer from "./FaqDataEmployer";
 const dot = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="38"
-    height="38"
+    width="30"
+    height="30"
     viewBox="0 0 256 256"
+    className=""
   >
     <path
       fill="currentColor"
@@ -100,17 +101,15 @@ const FaqEmployer = () => {
                             {faq.question}
                           </h5>
                           <i
-                            className={`fa fa-${
-                              activeIndex === faqIndex ? "minus" : "plus"
-                            } text-xs pt-1 position-absolute end-0 me-3`}
+                            className={`fa fa-${activeIndex === faqIndex ? "minus" : "plus"
+                              } text-xs pt-1 position-absolute end-0 me-3`}
                           />
                         </button>
 
                         <div
                           id={`collapse${faqIndex}`}
-                          className={`accordion-collapse collapse ${
-                            activeIndex === faqIndex ? "show" : ""
-                          }`}
+                          className={`accordion-collapse collapse ${activeIndex === faqIndex ? "show" : ""
+                            }`}
                         >
                           <div className="accordion-body faqs_desc text-sm opacity-8">
                             {faq?.answer?.map((data) => (
@@ -128,7 +127,7 @@ const FaqEmployer = () => {
                                     </span>
                                   </div>
                                   <span className="py-0 my-0" key={item}>
-                                    {item}  
+                                    {item}
                                   </span>
                                 </div>
                               ))}

@@ -101,17 +101,15 @@ const FaqWorker = () => {
                             {faq.question}
                           </h5>
                           <i
-                            className={`fa fa-${
-                              activeIndex === faqIndex ? "minus" : "plus"
-                            } text-xs pt-1 position-absolute end-0 me-3`}
+                            className={`fa fa-${activeIndex === faqIndex ? "minus" : "plus"
+                              } text-xs pt-1 position-absolute end-0 me-3`}
                           />
                         </button>
 
                         <div
                           id={`collapse${faqIndex}`}
-                          className={`accordion-collapse collapse ${
-                            activeIndex === faqIndex ? "show" : ""
-                          }`}
+                          className={`accordion-collapse collapse ${activeIndex === faqIndex ? "show" : ""
+                            }`}
                         >
                           <div className="accordion-body faqs_desc text-sm opacity-8">
                             {faq?.answer?.map((data) => (
@@ -121,18 +119,34 @@ const FaqWorker = () => {
                             ))}
 
                             {faq?.list &&
-                              faq?.list?.map((item) => (
-                                <div className="d-flex justify-content-start align-items-start">
-                                  <div className="bullet">
-                                    <span className="">
-                                      {dot}
-                                    </span>
-                                  </div>
-                                  <span className="py-0 my-0" key={item}>
-                                    {item}
-                                  </span>
-                                </div>
-                              ))}
+                              faq?.list?.map((item) => {
+                                const hasColon = item.includes(': ');
+                                if (hasColon) {
+                                  const [boldPart, regularPart] = item.split(': ');
+                                  return (
+                                    <div className="d-flex justify-content-start align-items-start" key={item}>
+                                      <div className="bullet">
+                                        <span className="">{dot}</span>
+                                      </div>
+                                      <span className="font faq_list_text py-0 my-0 mt-1">
+                                        <strong className="font">{boldPart}:</strong> {regularPart}
+                                      </span>
+                                    </div>
+                                  );
+                                } else {
+                                  return (
+                                    <div className="d-flex justify-content-start align-items-start" key={item}>
+                                      <div className="bullet">
+                                        <span className="">{dot}</span>
+                                      </div>
+                                      <span className="font faq_list_text py-0 my-0">
+                                        {item}
+                                      </span>
+                                    </div>
+                                  );
+                                }
+                              })
+                            }
 
                             {faq?.answerAfterList &&
                               faq?.answerAfterList?.map((item) => (
