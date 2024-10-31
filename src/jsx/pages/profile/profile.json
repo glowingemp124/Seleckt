@@ -1,0 +1,20 @@
+{
+    "firstName": "John",
+    "middleName": "Doe",
+    "lastName": "Smith",
+    "username": "john_doe",
+    "mobilePhone": "1234567890",
+    "whatsapp": "9876543210",
+    "email": "john.doe@example.com",
+    "address": "123 Main Street",
+    "city": "London",
+    "country": "United Kingdom",
+    "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+    "skills": {
+      "programming": 78,
+      "prototyping": 65,
+      "uiDesign": 89,
+      "researching": 94
+    }
+  }
+  

@@ -1,0 +1,55 @@
+/* YourCustomStyles.css */
+
+/* Navbar */
+#myCustomNavbar {
+    background-color: #333; /* Change the background color as needed */
+    border: none;
+  }
+  
+  /* Navbar Header */
+  .myCustomNavbar-header {
+    padding: 15px;
+  }
+  
+  /* Logo */
+  .myCustomLogo img {
+    margin-right: 10px; /* Adjust the spacing between logos */
+  }
+  
+  /* Navigation Links */
+  .myCustomLink {
+    color: #fff; /* Change the text color as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px; /* Adjust the spacing between links */
+  }
+  
+  .myCustomLink:hover {
+    color: #ff9900; /* Change the text color on hover as needed */
+  }
+  
+  /* Responsive Navbar Toggle Button */
+  .navbar-toggle {
+    border: 1px solid #fff; /* Change the border color as needed */
+  }
+  
+  .navbar-toggle .icon-bar {
+    background-color: #fff; /* Change the toggle button color as needed */
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 767px) {
+    .myCustomNavbar-header {
+      margin-bottom: 15px;
+    }
+  
+    .myCustomLink {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+  
+
+  

@@ -1,0 +1,84 @@
+.anitSlavery_Content {
+    width: 60%;
+    margin: auto;
+    color: black;
+    padding-top: 6rem;
+  }
+  
+  .box {
+    padding: 1rem 0;
+  }
+  
+  .anitSlavery_mainHeading {
+    font-weight: 700;
+    font-size: 2.4rem !important;
+    color: black;
+  }
+  
+  .anitSlavery_heading {
+    font-weight: 700;
+    font-size: 1.45rem;
+    color: black;
+    /* margin: 0.8rem 0rem; */
+    margin-bottom: .8rem;
+  }
+  .anitSlavery_subHeading {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: black;
+    margin-top: 0.7rem;
+  }
+  
+  .anitSlavery_text {
+    font-size: 500;
+    font-size: 1rem;
+    color: black;
+  }
+  .anitSlavery_list {
+    font-size: 500;
+    font-size: 1rem;
+    color: black;
+    padding: 0.3rem 0;
+    margin-left: 1rem;
+  }
+  
+  .no-wrap {
+    white-space: nowrap;
+  }
+  
+  
+  .divider {
+    height: 1px;
+    background-color: black;
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: 0;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .anitSlavery_Content {
+      width: 90%;
+      padding-top: 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .anitSlavery_Content {
+      padding-top: 5rem;
+    }
+  
+    .anitSlavery_mainHeading {
+      font-size: 2.3rem;
+    }
+  
+    .anitSlavery_heading {
+      font-size: 1.25rem;
+      margin-top: 0.7rem;
+    }
+  
+    .anitSlavery_text {
+      font-size: 500;
+      font-size: 0.95rem;
+    }
+  }
+  
