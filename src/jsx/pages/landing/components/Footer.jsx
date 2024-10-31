@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Container, Row, Col, ListGroup, Image, Button } from "react-bootstrap";
 import "../../../pages/landing/assets/css/style.css";
 // import GroupOfPeople from "../assets/img/Groupofdiversepeople.png";
 
 // Images
 import LogoImage from "../assets/img/heroLogo.png";
-import AppleImage from "../assets/img/apple-logo.png";
 import PlayStoreImage from "../assets/img/playstore.png";
-import { HashLink } from "react-router-hash-link";
 
 const handleSmoothScroll = () => {
   window.scrollTo({
@@ -39,7 +38,6 @@ const Footer = () => {
             </h5>
 
             <div className="footer_button_box mt-3">
-              {/* APPLE BUTTON */}
               <Button
                 className="btn btn-dark py-0 d-flex align-items-center justify-content-center m-1"
                 style={{
@@ -77,7 +75,6 @@ const Footer = () => {
                 </div>
               </Button>
 
-              {/* PLAY STORE BUTTON */}
               <Button
                 size="md"
                 className="btn btn-dark d-flex align-items-center m-1"
@@ -129,7 +126,7 @@ const Footer = () => {
               Useful Links
             </h4>
             <ListGroup variant="flush">
-              {cardData.LINKS.map((iter, index) => (
+              {cardData?.LINKS.map((iter, index) => (
                 <ListGroup.Item
                   key={index}
                   className=""
@@ -140,7 +137,6 @@ const Footer = () => {
                     margin: ".3rem 0",
                   }}
                 >
-                  {/* Add actual URLs for navigation */}
                   <Link
                     className="font text-black"
                     onClick={handleSmoothScroll}
@@ -155,10 +151,6 @@ const Footer = () => {
               <HashLink className="font text-black mt-1" smooth to="/#about">
                 About Us
               </HashLink>
-
-              {/* <a href="#c" className="mt-2 font text-black">
-                About Us
-              </a> */}
             </ListGroup>
           </div>
         </Col>
@@ -323,7 +315,10 @@ const twitter = (
 
 const cardData = {
   LINKS: [
-    { name: "Terms and Conditions", url: "/tac" },
+    {
+      name: "Terms and Conditions",
+      url: "/tac"
+    },
     {
       name: "Website and App Use, Privacy, and Cookies Policy",
       url: "/privacy-policy",
@@ -332,9 +327,8 @@ const cardData = {
       name: "Anti-Slavery and Human Trafficking Statement",
       url: "/anti-slavery",
     },
-    // { name: "Statement", url: "/statement" },
-    // { name: "Cookies", url: "/cookies" },
   ],
+
   Company: [
     { name: "Twitter", icon: twitter, url: "#" },
     { name: "LinkedIn", icon: linkedIn, url: "#" },

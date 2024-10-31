@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../../../pages/landing/assets/css/style.css";
 import FaqEmployer from "./FaqEmployer";
 import FaqWorker from "./FaqWorker";
+import "../../../pages/landing/assets/css/style.css";
 
 const FaqSection = () => {
   const [activeFaqType, setActiveFaqType] = useState("employer");

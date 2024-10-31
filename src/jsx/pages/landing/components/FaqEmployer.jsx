@@ -38,7 +38,7 @@ const FaqEmployer = () => {
             {FaqDataEmployer.map((section, sectionIndex) => (
               <div key={section.id}>
                 <h2
-                  className="font py-3 faq_sections_heading d-flex justify-content-start align-items-center"
+                  className="font py-3 faq_sections_heading d-flex justify-content-start align-items-start"
                   style={{ cursor: "pointer", color: "#00B094" }}
                   onClick={() => toggleSection(sectionIndex)}
                 >

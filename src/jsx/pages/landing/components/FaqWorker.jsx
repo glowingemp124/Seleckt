@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "../../../pages/landing/assets/css/style.css";
 import FaqDataWorker from "./FaqDataWorker";
+
+import "../../../pages/landing/assets/css/style.css";
 
 const dot = (
   <svg
@@ -37,8 +38,7 @@ const FaqWorker = () => {
           <div className="col-md-12 mx-auto">
             {FaqDataWorker.map((section, sectionIndex) => (
               <div key={section.id}>
-                <h2
-                  className="font py-3 faq_sections_heading d-flex justify-content-start align-items-center"
+                <h2 className="font py-3 faq_sections_heading d-flex justify-content-start align-items-start"
                   style={{ cursor: "pointer", color: "#00B094" }}
                   onClick={() => toggleSection(sectionIndex)}
                 >
@@ -126,10 +126,10 @@ const FaqWorker = () => {
                                   return (
                                     <div className="d-flex justify-content-start align-items-start" key={item}>
                                       <div className="bullet">
-                                        <span className="">{dot}</span>
+                                        <span>{dot}</span>
                                       </div>
                                       <span className="font faq_list_text py-0 my-0 mt-1">
-                                        <strong className="font">{boldPart}:</strong> {regularPart}
+                                        <span style={{ fontWeight: 600 }}>{boldPart}:</span> {regularPart}
                                       </span>
                                     </div>
                                   );
@@ -137,7 +137,7 @@ const FaqWorker = () => {
                                   return (
                                     <div className="d-flex justify-content-start align-items-start" key={item}>
                                       <div className="bullet">
-                                        <span className="">{dot}</span>
+                                        <span>{dot}</span>
                                       </div>
                                       <span className="font faq_list_text py-0 my-0">
                                         {item}

@@ -18,6 +18,7 @@ import { About } from "../components/about";
 import FaqSection from "../components/FaqSection";
 import { Contact } from "../components/contact";
 import Footer from "../components/Footer";
+import MoveToTop from "../components/MoveToTop";
 
 // import { Features } from "../components/features";
 // import WhyChooseSeleckt from "../components/WhyChooseSeleckt";
@@ -104,7 +105,9 @@ function LandingPage() {
 
       <div id="contactUs"><Contact data={landingPageData.Contact} /></div>
 
-      {showButton && (
+      <MoveToTop />
+
+      {/* {showButton && (
         <button
           onClick={handleTop}
           className="moveTop"
@@ -114,7 +117,7 @@ function LandingPage() {
           </svg>
 
         </button>
-      )}
+      )} */}
       <Footer />
     </>
   );
