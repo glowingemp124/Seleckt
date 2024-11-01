@@ -109,7 +109,7 @@ const FaqDataWorker = [
           "Confirm your skills and experience relevant to the role",
         ],
         answerAfterList: [
-          "Once you successfully complete the interview, you'll be verified and can start accepting job offers that align with your preferences.",
+          "When you successfully complete the interview, you'll be verified and can start accepting job offers that align with your preferences.",
         ],
       },
       {
@@ -182,9 +182,9 @@ const FaqDataWorker = [
       },
       {
         id: 4,
-        question: "What If I Forget to Check Out?",
+        question: "What If I Forget to Clock Out?",
         answer: [
-          "The app will automatically check you out 1 hour after your shift completes or you can manually check yourself out. You will only be paid till the actual end time of the shift. If you have any overtime arranged with your employer, they can adjust this on your timesheet to ensure you get paid for it. However, your employer may contact you to confirm your hours.",
+          "The app will automatically clock you out 1 hour after your shift completes or you can manually clock yourself out. You will only be paid till the actual end time of the shift. If you have any overtime arranged with your employer, they can adjust this on your timesheet to ensure you get paid for it. However, your employer may contact you to confirm your hours.",
         ],
       },
       {

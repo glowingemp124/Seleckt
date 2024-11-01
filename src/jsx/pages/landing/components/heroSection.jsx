@@ -9,7 +9,6 @@ import {
   Image,
 } from "react-bootstrap";
 import LogoImage from "../assets/img/heroLogo.png";
-import MobileImage from "../assets/img/heroMobile.png";
 import AppleImage from "../assets/img/apple-logo.png";
 import PlayStoreImage from "../assets/img/playstore.png";
 import colors from "react-multi-date-picker/plugins/colors";
@@ -186,15 +185,3 @@ export const HeroSection = (props) => {
     </Container>
   );
 };
-
-{
-  /* <h1
-              className="font logo_text text-white text-center"
-              style={{ letterSpacing: "1px", fontWeight: 700 }}
-            >
-              STAFFING
-            </h1>
-            <h2 className="font slogan_font text-white text-center">
-              MADE SIMPLE
-            </h2> */
-}

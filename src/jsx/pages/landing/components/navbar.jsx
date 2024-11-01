@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
 import { HashLink } from 'react-router-hash-link';
 import "../../../pages/landing/assets/css/style.css";
-import Logo1 from "../assets/img/Logo1.png";
-import Logo2 from "../assets/img/Logo2.png";
+// import Logo1 from "../assets/img/Logo1.png";
+// import Logo2 from "../assets/img/Logo2.png";
 
 export const MainNavbar = (props) => {
   const [navbarBackground, setNavbarBackground] = useState(false);
@@ -62,7 +62,7 @@ export const MainNavbar = (props) => {
         <span
           className="navbar-toggler-icon"
           style={{
-            backgroundImage: `url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' strokeWidth='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")`,
           }}
         />
       </Navbar.Toggle>
@@ -135,7 +135,7 @@ export const MainNavbar = (props) => {
           >
             Industries
           </Nav.Link>
-          
+
           <Nav.Link
             as={HashLink}
             smooth
@@ -155,7 +155,7 @@ export const MainNavbar = (props) => {
           >
             Contact Us
           </Nav.Link>
-          
+
           <Nav.Link
             as={HashLink}
             smooth

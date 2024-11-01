@@ -126,7 +126,7 @@ const FaqDataEmployer = [
         id: 5,
         question: "Can I track worker attendance and performance?",
         answer: [
-          "Yes, you can monitor attendance through the app's dashboard. Performance ratings and feedback from past jobs (if enabled) will also be visible.",
+          "Yes, you can monitor attendance through the app's dashboard. Performance ratings and feedback from past jobs will also be visible.",
         ],
       },
       {

@@ -1,7 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
-import { motion } from "framer-motion";
-import { Card } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -9,13 +7,14 @@ import Slider from "react-slick";
 import Hospitality from "../assets/img/industrialImages/hospitality-min.webp";
 import Industrial from "../assets/img/industrialImages/Industrial.webp";
 import Retail from "../assets/img/industrialImages/Retail.webp";
-import SocialCare from "../assets/img/industrialImages/SocialCare.webp";
 import businessManagemnt from "../assets/img/industrialImages/businessManagemnt.webp";
 import facilitiesmanagement from "../assets/img/industrialImages/facilitiesmanagement-min.webp";
 import nurseryCare from "../assets/img/industrialImages/nurseryCare.webp";
 import "../../../pages/landing/assets/css/style.css";
 
 const IndustryDetailsMockupsMobile = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const sliderRef = useRef(null);
 
   const next = () => {
@@ -96,34 +95,20 @@ const IndustryDetailsMockupsMobile = () => {
             boxShadow: "0 4px 4px rgba(0, 0, 0, 0.3)",
           }}
         >
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+          <div
+            className="d-flex justify-content-center align-items-center p-4"
+            style={{ minHeight: "9rem" }}
           >
-            <div
-              className="d-flex justify-content-center align-items-center p-4"
-              style={{ minHeight: "9rem" }}
-            >
-              <h3 className="boxes_text">
-                Join the growing number of forward-thinking employers who are
-                transforming their recruitment process with{" "}
-                <span className="font fw-normal">Seleckt</span> Staff. Discover
-                a smarter way to hire today!
-              </h3>
-            </div>
-          </motion.div>
+            <h3 className="boxes_text">
+              Join the growing number of forward-thinking employers who are
+              transforming their recruitment process with{" "}
+              <span className="font fw-normal">Seleckt</span> Staff. Discover
+              a smarter way to hire today!
+            </h3>
+          </div>
         </Col>
       </Row>
 
-      {/* INDUSTRIES SECTION */}
-      {/* <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      > */}
       <div>
         <Row
           className="d-flex justify-content-center align-items-center"
@@ -137,23 +122,26 @@ const IndustryDetailsMockupsMobile = () => {
           <Slider ref={sliderRef} {...settings}>
             {cardData?.map((iter, index) => (
               <Col key={iter?.id} className=" mb-4 px-1">
-                <div class="card_img_box position-relative">
+                <div className="card_img_box position-relative">
                   <Image
-                    src={iter.src}
+                    src={imageLoaded ? iter.src : 'https://placehold.co/600x400?text=Industries+Images&font=open-sans'}
                     alt="mockup-1"
-                    class="w-100 h-auto img-fluid"
+                    className="w-100 img-fluid"
                     style={{
                       width: "100%",
                       height: "15rem",
                       objectFit: "cover",
                       margin: "auto",
                     }}
+
+                    onLoad={() => setImageLoaded(true)}
+                    onError={() => setImageLoaded(true)}
                   />
-                  <div class="image-overlay"></div>
-                  <h2 class="font card_title">{iter?.title}</h2>
+                  <div className="image-overlay"></div>
+                  <h2 className="font card_title">{iter?.title}</h2>
                 </div>
 
-                <div class="border_bottom"></div>
+                <div className="border_bottom"></div>
 
                 <div className="mt-4">
                   {iter.description.map((temp, index) => (
@@ -193,9 +181,9 @@ const IndustryDetailsMockupsMobile = () => {
               />
             </svg>
           </button>
+
         </Row>
       </div>
-      {/* </motion.div> */}
     </Container>
   );
 };

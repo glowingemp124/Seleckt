@@ -159,31 +159,31 @@
 }
 .ct-grid {
    stroke: rgba(0, 0, 0, 0.2);
-   stroke-width: 1px;
-   stroke-dasharray: 2px;
+   strokeWidth: 1px;
+   strokeDasharray: 2px;
 }
 .ct-grid-background {
    fill: none;
 }
 .ct-point {
-   stroke-width: 10px;
-   stroke-linecap: round;
+   strokeWidth: 10px;
+   strokeLinecap: round;
 }
 .ct-line {
    fill: none;
-   stroke-width: 4px;
+   strokeWidth: 4px;
 }
 .ct-area {
    stroke: none;
-   fill-opacity: 0.1;
+   fillOpacity: 0.1;
 }
 .ct-bar {
    fill: none;
-   stroke-width: 10px;
+   strokeWidth: 10px;
 }
 .ct-slice-donut {
    fill: none;
-   stroke-width: 60px;
+   strokeWidth: 60px;
 }
 .ct-series-a .ct-bar,
 .ct-series-a .ct-line,

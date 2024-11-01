@@ -42,7 +42,7 @@ const PrivacyContent = () => {
             </h4>
 
             <p className="privacyPolicy_text">
-            This section explains the rules for using our platform as an <strong className="font">employer</strong> or <strong className="font">worker</strong>.
+              This section explains the rules for using our platform as an <strong className="font">employer</strong> or <strong className="font">worker</strong>.
             </p>
 
             <h4 className="font privacyPolicy_subHeading">
@@ -113,7 +113,7 @@ const PrivacyContent = () => {
             <h4 className="font privacyPolicy_heading">2. Privacy Policy</h4>
 
             <p className="privacyPolicy_text">
-            This section explains how we collect, use, and protect your personal information in compliance with <strong className="font">GDPR</strong> and other relevant data protection laws.
+              This section explains how we collect, use, and protect your personal information in compliance with <strong className="font">GDPR</strong> and other relevant data protection laws.
             </p>
 
             <h4 className="font privacyPolicy_subHeading">
@@ -162,7 +162,7 @@ const PrivacyContent = () => {
               2.3 Sharing Your Data
             </h4>
             <p className="privacyPolicy_text">
-            We only share your information with:
+              We only share your information with:
             </p>
             <ul>
               <li className="font privacyPolicy_list">
@@ -183,7 +183,7 @@ const PrivacyContent = () => {
 
             <h4 className="font privacyPolicy_subHeading">2.4 Your Rights</h4>
             <p className="privacyPolicy_text">
-            You have the right to:
+              You have the right to:
             </p>
 
             <ul>
@@ -207,9 +207,9 @@ const PrivacyContent = () => {
           {/* 3. Cookies Policy */}
           <div className="box">
             <h4 className="font privacyPolicy_heading">3. Cookies Policy</h4>
-            
+
             <p className="privacyPolicy_text">
-            Our website and app use cookies to personalise your experience and analyse usage. Cookies are small files stored on your device that help us improve our services.
+              Our website and app use cookies to personalise your experience and analyse usage. Cookies are small files stored on your device that help us improve our services.
             </p>
 
             <h4 className="font privacyPolicy_subHeading">

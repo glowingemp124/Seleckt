@@ -1,11 +1,11 @@
 import { Col, Container, Image, Row } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import Slider from "react-slick";
-import { te } from "date-fns/locale";
-import workerProfile from "../assets/img/secondMockupImages/workerProfileNew.png";
+
+// images
+import workerProfile from "../assets/img/secondMockupImages/workerProfileNew.webp";
 import worker_profile_page from "../assets/img/secondMockupImages/worker_profile.webp";
-import timeSheet from "../assets/img/secondMockupImages/timeSheet.png";
+import timeSheet from "../assets/img/secondMockupImages/timeSheet.webp";
 import workerDashboard from "../assets/img/secondMockupImages/workerDashboard.webp";
 
 const MockUpsSection = () => {
@@ -77,21 +77,14 @@ const MockUpsSection = () => {
   return (
     <div className=" bg-white">
       <div
-        className={`flex justify-content-center px-0 ${
-          smallScreen ? "mx-1" : "mx-4"
-        }`}
+        className={`flex justify-content-center px-0 ${smallScreen ? "mx-1" : "mx-4"
+          }`}
         style={{
           // marginInlineStart: "10rem",
           padding: "5rem 0",
         }}
       >
         <Container fluid className="p-0" style={{ width: "85%" }}>
-          {/* <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          > */}
           <div>
             <Row className="d-flex justify-content-center align-items-center mx-2 p-0">
               <Slider className="p-0" {...settings}>
@@ -148,7 +141,6 @@ const MockUpsSection = () => {
               </Slider>
             </Row>
           </div>
-          {/* </motion.div> */}
         </Container>
       </div>
     </div>
